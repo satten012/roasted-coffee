@@ -1,0 +1,40 @@
+/* General rules */
+
+:root{
+    --bg-color:#020204;
+    --text-color:#fff;
+    --accent:#c7a17a;
+}
+
+html, body {
+    height: 100%;   
+}
+
+body{
+    min-width: 320px;
+    font-family: 'Jost', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}   
+
+/* картинки адаптивные */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* прижатие футера вниз */
+.main{
+    flex: 1 1 auto;
+}
+
+
+
