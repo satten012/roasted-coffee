@@ -24,6 +24,17 @@ img{
     height: auto;
 }
 
+a{ 
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+a:hover, a.active{
+    color: var(--accent);
+}
+
+
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -37,4 +48,12 @@ img{
 }
 
 
+/*Header */
+.header-top{
+    padding: 8px 0px;
+}
 
+.languages a, .header-phone {
+    font-weight: 600;
+    font-size: 14px;
+}
