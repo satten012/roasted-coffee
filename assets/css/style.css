@@ -57,3 +57,46 @@ a:hover, a.active{
     font-weight: 600;
     font-size: 14px;
 }
+
+.header nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #32323d;
+    border-bottom: 1px solid #32323d;
+    background: var(--bg-color) !important;
+    position: relative;
+}
+
+.navbar-brand{
+    position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.navbar-brand img {
+    max-width: 58px;
+/*     transition: all 0.3s; */
+}
+
+.navbar-brand:hover img {
+    filter: drop-shadow(0 0 10px var(--accent));
+}
+
+.header .navbar-nav .nav-link{
+    text-transform: uppercase;
+    color: var(--text-color);
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active {
+    color: var(--accent);
+}
+
+
+@media (min-width:992px){
+    .header .navbar-nav .nav-item:first-child a  {
+        padding-left: 0;
+        }
+}
