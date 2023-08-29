@@ -94,6 +94,15 @@ transform: translateX(-50%);
     color: var(--accent);
 }
 
+.dot{
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent);
+    top: 0;
+    right: 0;
+
+}
+
 
 @media (min-width:992px){
     .header .navbar-nav .nav-item:first-child a  {
