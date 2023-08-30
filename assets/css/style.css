@@ -123,8 +123,7 @@ transform: translateX(-50%);
 }
 
 @media (max-width:576px){
-
-
+    
     .navbar-brand img {
         max-width: 44px;
     }
