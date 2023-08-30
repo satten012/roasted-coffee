@@ -3,7 +3,9 @@
 :root{
     --bg-color:#020204;
     --text-color:#fff;
+    --text-color-secondary:#dfdfdf;
     --accent:#c7a17a;
+    --accent-dark:#a4815e; 
 }
 
 html, body {
@@ -47,6 +49,24 @@ a:hover, a.active{
     flex: 1 1 auto;
 }
 
+.btn-warning{
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--text-color);
+    transition: all .3s;
+    border-radius: 10px;
+}
+
+.btn-warning:hover{
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+}
+
+.btn-outline-secondary{
+    color: var(--text-color);
+    transition: all .3s;
+    border-radius: 10px;
+}
 
 /*Header */
 .header-top{
@@ -111,6 +131,40 @@ transform: translateX(-50%);
     box-shadow: none;
 }
 
+/* Hero section */
+
+.hero-section{
+    background:url(../image/hero_img.jpg);
+    background-repeat: no-repeat; /* картинка не будет повторяться */
+    background-position: center;
+    background-size: cover; /* маштабирование картинки */
+    padding: 200px 0;
+}
+
+.hero-section-content{
+    width: 50%;
+}
+
+.hero-section-content h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 144%;
+}
+
+.hero-section-content p{
+    font-size: 18px;
+    color: var(--text-color-secondary);
+}
+
+.hero-section-content .btn {
+   padding: 15px 60px;
+    font-size: 15px;
+    font-weight: 500;
+   text-transform: uppercase;   
+   margin-right: 20px;
+   margin-bottom: 20px;
+}
 
 @media (min-width:992px){
     .header .navbar-nav .nav-item:first-child a  {
@@ -122,9 +176,56 @@ transform: translateX(-50%);
     }
 }
 
+@media (max-width:991.89px){
+    .hero-section{
+        padding: 100px 0;
+    }
+
+    .hero-section-content{
+        width: 70%;
+    }
+
+    .hero-section-content h1{
+        font-size: 48px;
+    }
+
+    .hero-section-content p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:767.89px){
+    .hero-section{
+        padding: 70px 0;
+    }
+
+    .hero-section-content{
+        width: 100%;
+    }
+
+    .hero-section-content h1{
+        font-size: 40px;
+    }
+
+    .hero-section-content p{
+        font-size: 16px;
+    }
+}
+
+
+
+
 @media (max-width:576px){
-    
+
     .navbar-brand img {
         max-width: 44px;
+    }
+
+    .hero-section-content a.btn {
+        width: 210px;
+    }
+
+    .hero-section{
+        background-position: 66%;
     }
 }
