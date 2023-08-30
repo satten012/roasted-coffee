@@ -59,8 +59,8 @@ a:hover, a.active{
 }
 
 .header nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
+/*     padding-top: 10px;
+    padding-bottom: 10px; */
     border-top: 1px solid #32323d;
     border-bottom: 1px solid #32323d;
     background: var(--bg-color) !important;
@@ -103,9 +103,29 @@ transform: translateX(-50%);
 
 }
 
+.modal-backdrop{
+    z-index: 1;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
 
 @media (min-width:992px){
     .header .navbar-nav .nav-item:first-child a  {
         padding-left: 0;
-        }
+    }
+
+    .navbar-brand img {
+        max-width: 44px;
+    }
+}
+
+@media (max-width:576px){
+
+
+    .navbar-brand img {
+        max-width: 44px;
+    }
 }
