@@ -6,6 +6,7 @@
     --text-color-secondary:#dfdfdf;
     --accent:#c7a17a;
     --accent-dark:#a4815e; 
+    --bg-dark-color:#14141d;
 }
 
 html, body {
@@ -166,6 +167,50 @@ transform: translateX(-50%);
    margin-bottom: 20px;
 }
 
+/* banner-section */
+.banner-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.banner-section-img img {
+    object-fit: cover;
+    object-position: right top;
+}
+
+.banner-section-img::before{ /* добавление затемнения */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+}
+
+.banner-section-content h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    color: var(--text-color-secondary);
+    
+}
+
+.banner-section-content p {
+    color: var(--text-color-secondary); 
+     
+}
+
+.banner-section-content {
+    background: var(--bg-dark-color);
+}
+
+.banner-section-content{
+    border-radius: 0 10px 10px 0;
+}
+
+
 @media (min-width:992px){
     .header .navbar-nav .nav-item:first-child a  {
         padding-left: 0;
@@ -226,6 +271,6 @@ transform: translateX(-50%);
     }
 
     .hero-section{
-        background-position: 66%;
+        background-position: 66%; /* двигает картинку  */
     }
 }
