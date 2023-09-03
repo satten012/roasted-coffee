@@ -7,6 +7,7 @@
     --accent:#c7a17a;
     --accent-dark:#a4815e; 
     --bg-dark-color:#14141d;
+    --bg-darken-color:#22222F;
 }
 
 html, body {
@@ -173,9 +174,14 @@ transform: translateX(-50%);
     margin-bottom: 100px;
 }
 
+.banner-section-img, .banner-section-content{
+    width: 50%;
+}
+
 .banner-section-img img {
     object-fit: cover;
     object-position: right top;
+    border-radius:  10px 0px 0px 10px;
 }
 
 .banner-section-img::before{ /* добавление затемнения */
@@ -199,7 +205,7 @@ transform: translateX(-50%);
 
 .banner-section-content p {
     color: var(--text-color-secondary); 
-     
+
 }
 
 .banner-section-content {
@@ -237,6 +243,22 @@ transform: translateX(-50%);
     .hero-section-content p{
         font-size: 16px;
     }
+
+    .banner-section-img,.banner-section-content  {
+        width: 100%;
+    }
+    
+    .banner-section-img img {
+        border-radius:  10px 10px 10px 10px;
+    }
+    
+    .banner-section-content{
+        border-radius:  10px 10px 10px 10px;
+    }
+
+    .banner-section-content{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width:767.89px){
@@ -255,6 +277,11 @@ transform: translateX(-50%);
     .hero-section-content p{
         font-size: 16px;
     }
+
+    .banner-section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -272,5 +299,14 @@ transform: translateX(-50%);
 
     .hero-section{
         background-position: 66%; /* двигает картинку  */
+    }
+
+    .banner-section-content p {
+        font-size: 12px;
+    }
+
+    .banner-section-content h3 {
+        font-size: 20px;
+        text-align: center;
     }
 }
