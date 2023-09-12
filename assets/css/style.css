@@ -400,6 +400,24 @@ transform: translateX(-50%);
     color: #818181  
 }
 
+.minicart-total-price h5{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.minicart-btn .btn {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+
+
 @media (min-width:992px){
     .header .navbar-nav .nav-item:first-child a  {
         padding-left: 0;
