@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee :: Home page</title>
+    <title>Coffee :: Product page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;0,700;0,900;1,400;1,500&display=swap"
@@ -17,7 +17,6 @@
 <body>
 
     <div class="wrapper">
-
 
         <header class="header">
 
@@ -173,42 +172,69 @@
 
         </header>
 
-        <main class="main index-page">
+        <main class="main product-page">
 
-            <section class="hero-section">
-                <div class="container ">
-                    <div class="hero-section-content">
-                        <h1>Roasted coffee best choice</h1>
-                        <p class="mt-4 mb-4">The coffee is brewed by first roasting the green coffee beans over hot
-                            coals in a brazier. given an opportunity to sample.</p>
-                        <a href="#" class="btn btn-warning">Buy now</a>
-                        <a href="#" class="btn btn-outline-secondary">Read more</a>
-                    </div>
-                </div>
-            </section>
+            <div class="container mt-4 mb-4 mt-lg-5 mb-lg-5">
+                <h1 class="mb-lg-5">Lavazza crema e gusto</h1>
 
-            <section class="banner-section">
-                <div class="container">
-                    <div class="banner-section-inner d-flex flex-column flex-lg-row">
-                        <div class="banner-section-img position-relative">
-                            <img class=" w-100 h-100" src="assets/image/banner.png" alt="">
-                        </div>
-                        <div class="banner-section-content py-4 px-3">
-                            <h3 class="mb-3">Roasted Coffee</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which don't
-                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                                need to be sure there isn't anything embarrassing hidden in the middle of text. All the
-                                Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                                making this the first true generator on the Internet.</p>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="product-image">
+                            <img src="assets/image/product-large.png" alt="">
                         </div>
                     </div>
-                </div>
-            </section>
+                    <div class="col-md-4">
+                        <div class="product-page-actions">
+                            <div class="product-price">
+                                <span class="me-2">$19.99</span>
+                                <small>$29.99</small>
+                            </div>
 
-            <section class="catalog-section">
-                <div class="container">
-                    <div class="h-title">Catalog</div>
+                            <div class="product-variations">
+                                <ul class="d-flex list-unstyled mt-4 mb-4 column-gap-2">
+                                    <li><a href="#" class="btn btn-outline-secondary ">L</a></li>
+                                    <li><a href="#" class="btn btn-outline-secondary active">XL</a></li>
+                                    <li><a href="#" class="btn btn-outline-secondary">XXL</a></li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-warning add2cart-btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="product-destiption mt-4 mt-lg-5 mb-4">
+                            <h3>Desctiption</h3>
+                        </div>
+
+                        <div class="product-destiption-content">
+                            <ul class="ps-4">
+                                <li>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
+                                    text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                    chunks as necessary, making this the first true generator on the Internet.
+                                </li>
+                                <li>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable.</li>
+                                <li>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                    anything embarrassing hidden in the middle of text.</li>
+                                <li>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                    necessary, making this the first true generator on the Internet.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <section class="catalog-section mt-5 mb-5">
+
+                    <div class="h-title">Other Products</div>
 
                     <div class="row">
 
@@ -290,138 +316,13 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6">
-                            <div class="product-card">
-                                <div class="product-cart-img">
-                                    <img src="assets/image/product2 1.png" alt="product 1">
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="#">Lavazza coffee avazza coffee avazza coffee avazza coffee
-                                        </a></h3>
-                                    <div class="product-cart-details d-flex justify-content-between">
-                                        <div class="product-price">
-                                            <span>$19.99</span>
-                                            <small class="ms-2">$29.99</small>
-                                        </div>
-                                        <div class="product-actions">
-                                            <a href="#" class="add2favorite">
-                                                <span class="icon-favorite"></span>
-                                            </a>
-                                            <a href="#" class="add2cart">
-                                                <span class="icon-cart ms-2"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="product-card">
-                                <div class="product-cart-img">
-                                    <img src="assets/image/product1 1.png" alt="product 1">
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="#">Lavazza coffee
-                                        </a></h3>
-                                    <div class="product-cart-details d-flex justify-content-between">
-                                        <div class="product-price">
-                                            <span>$19.99</span>
-                                            <small class="ms-2">$29.99</small>
-                                        </div>
-                                        <div class="product-actions">
-                                            <a href="#" class="add2favorite">
-                                                <span class="icon-favorite"></span>
-                                            </a>
-                                            <a href="#" class="add2cart">
-                                                <span class="icon-cart ms-2"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="product-card">
-                                <div class="product-cart-img">
-                                    <img src="assets/image/product1 1.png" alt="product 1">
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="#">Lavazza coffee
-                                        </a></h3>
-                                    <div class="product-cart-details d-flex justify-content-between">
-                                        <div class="product-price">
-                                            <span>$19.99</span>
-                                            <small class="ms-2">$29.99</small>
-                                        </div>
-                                        <div class="product-actions">
-                                            <a href="#" class="add2favorite">
-                                                <span class="icon-favorite"></span>
-                                            </a>
-                                            <a href="#" class="add2cart">
-                                                <span class="icon-cart ms-2"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
 
 
-                </div>
-            </section>
 
-            <section class="news-section">
-                <div class="container">
-                    <h3 class="h-title">News</h3>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-4">
-                                <img src="assets/image/news-photo-1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body p-3">
-                                    <h5 class="card-title mb-2"><a href="">Lavazza coffee</a></h5>
-                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available,
-                                        but the majority have suffered alteration in some form, by injected humour, or
-                                        randomised words which don't look even slightly believable.</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4">
-                                <img src="assets/image/news-photo-2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body p-3">
-                                    <h5 class="card-title mb-2"><a href="">Lavazza coffee</a></h5>
-                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available,
-                                        but the majority have suffered alteration in some form, by injected humour, or
-                                        randomised words which don't look even slightly believable. words which don't
-                                        look even slightly believable.</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4">
-                                <img src="assets/image/news-photo-3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body p-3">
-                                    <h5 class="card-title mb-2"><a href="">Lavazza coffee</a></h5>
-                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available,
-                                        but the majority have suffered alteration in some form, by injected humour, or
-                                        randomised words which don't look even slightly believable.</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
 
         </main>
