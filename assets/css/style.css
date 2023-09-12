@@ -468,6 +468,21 @@ transform: translateX(-50%);
     padding-bottom: 12px;
 }
 
+.product-destiption h3{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.product-destiption-content{
+    background-color: var(--bg-dark-color);
+    padding: 30px;
+    font-size: 18px;
+    color: var(--text-color-secondary);
+    font-weight: 100;
+    border-radius: 10px;
+}
+
 @media (min-width:992px){
     .header .navbar-nav .nav-item:first-child a  {
         padding-left: 0;
