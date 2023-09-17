@@ -28,13 +28,14 @@ img{
     height: auto;
 }
 
-a{ 
+a, .product-actions div{ 
     color: var(--text-color);
     text-decoration: none;
     transition: color .3s;
 }
 
-a:hover, a.active{
+a:hover, a.active,
+.product-actions div:hover{
     color: var(--accent);
 }
 
@@ -71,6 +72,13 @@ a:hover, a.active{
 }
 
 /*Header */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: var(--bg-color);
+}
+
 .header-top{
     padding: 8px 0px;
 }
@@ -481,7 +489,31 @@ transform: translateX(-50%);
     color: var(--text-color-secondary);
     font-weight: 100;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
+
+.likes-count{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    left: 0;
+    position: absolute;
+    margin-top: 7%;
+    color: var(--accent);
+}
+
+.card-count{
+    color: var(--accent); 
+    text-align: center;
+    left: 0;
+    height: 100%;
+    line-height: 32px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 7%;
+    font-weight: 600;
+}
+
 
 @media (min-width:992px){
     .header .navbar-nav .nav-item:first-child a  {
@@ -525,6 +557,8 @@ transform: translateX(-50%);
     .banner-section-content{
         margin-top: 20px;
     }
+
+
 }
 
 @media (max-width:767.89px){
@@ -565,6 +599,9 @@ transform: translateX(-50%);
     .product-page h1{
         font-size: 36px;
     }
+    .likes-count{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:576px){
@@ -592,5 +629,8 @@ transform: translateX(-50%);
 
     .product-page h1{
         font-size: 32px;
+    }
+    .likes-count{
+        font-size: 12px;
     }
 }
